@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1,
+h4,
+h5 {
+  color: black;
+}
+
+/*------------- navbar --------------- */
+#inner-navbar {
+  position: absolute;
+  left: 0 !important;
+  transform: translateX(-260px);
+  transition: transform 0.5s ease;
+  z-index: 9999;
+}
+
+.nav-tab {
+  position: relative;
+  z-index: 2000;
+  background-color: black;
+  color: white;
+}
+
+.nav-header {
+  z-index: 1000;
+  background-color: black;
+  width: 70px;
+}
+
+.links ul {
+  overflow: visible;
+}
+
+.links ul li,
+.nav-header i,
+.nav-footer i {
+  cursor: pointer;
+}
+
+.inner-loading-screen {
+  z-index: -1;
+}
+
+/*-------------- content ---------------- */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*-------------- Overlay layer ------------ */
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 246, 246, 0.616);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  transition: bottom 0.6s ease;
+}
+
+.overlay h3 {
+  color: black;
+  font-weight: bold;
+}
+
+.overlay p {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  bottom: 0;
+}
+
+/*-------------- Area Section ------------- */
+#area h3 {
+  color: white;
+}
+
+
+/*-------------- contact Section ------------- */
+#contact .btn {
+  background-color: black;
+  color: rgb(234, 172, 30);
+  width: 80px;
+  border: 1px solid rgb(234, 172, 30);
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+#contact .btn:hover {
+  background-color: rgb(234, 172, 30); /* switch background to yellow */
+  color: black; /* text becomes black */
+  border-color: black; /* optional: border matches text */
+}
+
+/*-------------- search Section ------------- */
+#search ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.form-control:focus {
+    border-color: #0d6efd !important;   /* Bootstrap primary blue */
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.8) !important;
+    
+}
