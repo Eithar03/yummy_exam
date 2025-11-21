@@ -12,7 +12,7 @@ h5 {
 /*------------- navbar --------------- */
 #inner-navbar {
   position: absolute;
-  left: 0 !important;
+  left: 0;
   transform: translateX(-260px);
   transition: transform 0.5s ease;
   z-index: 9999;
