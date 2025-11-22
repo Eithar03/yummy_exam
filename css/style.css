@@ -101,13 +101,13 @@ h5 {
   color: rgb(234, 172, 30);
   width: 80px;
   border: 1px solid rgb(234, 172, 30);
-  transition: all 0.3s ease; /* smooth transition */
+  transition: all 0.3s ease; 
 }
 
 #contact .btn:hover {
-  background-color: rgb(234, 172, 30); /* switch background to yellow */
-  color: black; /* text becomes black */
-  border-color: black; /* optional: border matches text */
+  background-color: rgb(234, 172, 30); 
+  color: black; 
+  border-color: black; 
 }
 
 /*-------------- search Section ------------- */
@@ -115,7 +115,6 @@ h5 {
     color: rgba(255, 255, 255, 0.6);
 }
 .form-control:focus {
-    border-color: #0d6efd !important;   /* Bootstrap primary blue */
-    box-shadow: 0 0 10px rgba(13, 110, 253, 0.8) !important;
-    
+    border-color: #0d6efd ;   
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.8) ;
 }
